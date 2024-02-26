@@ -1,0 +1,154 @@
+/* styles.css */
+
+/* Font Face */
+@font-face {
+    font-family: 'Kumar One';
+    src: url('fonts/KumarOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Landing page styles */
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efdabb; /* Beige background color */
+}
+
+/* About Us button styles */
+/* styles.css */
+
+/* About Us button styles */
+.about-button {
+    margin-top: 10px; /* Adjust top margin to reduce space with the company name */
+    margin-bottom: 10px; /* Adjust bottom margin to reduce space with the "Coming Soon" text */
+    padding: 15px 20px; /* Increase padding for better button visibility */
+    background-color: #c79767; /* Brown background color */
+    color: #fffcf0; /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Kumar One', sans-serif; /* Use Kumar One font */
+    width: 18%; /* Set width to 18% of window width */
+    height: calc(18% * 45 / 390 * 0.5); /* Double the height while maintaining aspect ratio */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add slight shadow */
+    transition: background-color 0.3s; /* Add transition effect for background color */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-decoration: none; /* Remove underline */
+}
+
+.about-button:hover {
+    background-color: #dec4a3; /* Change background color on hover */
+}
+
+
+/* Logo container */
+.logo-container {
+    margin-top: 20px; /* Adjust spacing from button */
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Logo animation */
+.logo {
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hide the logo */
+    animation: fadeInScale 2s forwards, slideIn 2s forwards; /* Apply animation directly to the logo */
+}
+
+/* Company name styles */
+.company-name {
+    margin-top: 10px; /* Adjust top margin to reduce space with the "About Us" button */
+    margin-bottom: 10px; /* Adjust bottom margin to reduce space with the "Coming Soon" text */
+    font-family: 'Kumar One', sans-serif; /* Use Kumar One font */
+    font-size: 48px; /* Adjust font size */
+    text-align: center; /* Center align the text */
+    color: #654a51; /* Match font color with button brown color */
+}
+
+/* Coming Soon styles */
+.comingSoon {
+    margin-top: 10px; /* Adjust top margin to reduce space with the "About Us" button */
+    margin-bottom: 10px; /* Adjust bottom margin to reduce space with the company name */
+    font-family: 'Work Sans', sans-serif; /* Use Work Sans font */
+    font-size: 24px; /* Adjust font size */
+    font-style: italic; /* Italicize the text */
+    text-align: center; /* Center align the text */
+    color: #654a51; /* Match font color with company name */
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.5); /* Start small */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Fully scale up */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100vh); /* Start above the viewport */
+    }
+    to {
+        transform: translateY(0); /* Slide in to center */
+    }
+}
+
+/* styles.css */
+
+/* About page styles */
+.about-page {
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    margin: 0 auto; /* Center the content horizontally */
+    background-color: #efdabb; /* Set background color to match landing page */
+    padding: 20px; /* Add padding to the container */
+}
+
+/* Company name styles */
+.company-name {
+    font-family: 'Kumar One', sans-serif; /* Use Kumar One font */
+    font-size: 48px; /* Adjust font size */
+    color: #654a51; /* Match font color with button brown color */
+    margin-bottom: 10vh; /* Add vertical margin equal to distance to company description */
+    margin-left: 10%; /* Align with description text */
+}
+
+/* Company description styles */
+.company-description {
+    font-family: 'Work Sans', sans-serif; /* Use Work Sans font */
+    font-size: 18px; /* Adjust font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 10vh; /* Add vertical margin equal to distance to exec summary button */
+    margin-left: 10%; /* Add margin from the left */
+}
+
+/* Executive Summary button styles */
+.exec-summary-button {
+    background-color: #c79767; /* Brown background color */
+    color: #fffcf0; /* White text color */
+    border: none;
+    border-radius: 3px; /* Slightly round the corners */
+    padding: 5px 10px; /* Adjust padding for button size */
+    cursor: pointer;
+    font-family: 'Kumar One', sans-serif; /* Use Kumar One font */
+    font-size: 14px; /* Adjust font size */
+    text-align: left; /* Align text to the left */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    margin-left: 10%; /* Align with description text */
+}
+
+
+
+
